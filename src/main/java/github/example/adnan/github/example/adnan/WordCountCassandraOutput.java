@@ -41,7 +41,6 @@ import org.apache.hadoop.util.ToolRunner;
 public class WordCountCassandraOutput extends Configured implements Tool {
 
 	static final String KEYSPACE = "cql3_worldcount";
-	static final String COLUMN_FAMILY = "cql3_worldcount";
 	static final String OUTPUT_COLUMN_FAMILY = "output_words";
 	private static final String PRIMARY_KEY = "word";
 	public static final String INPUT_DIR_PATH = "/home/aubuntu/wordcount/input";
