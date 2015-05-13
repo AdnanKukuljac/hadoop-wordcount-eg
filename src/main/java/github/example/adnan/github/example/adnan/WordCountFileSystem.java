@@ -33,7 +33,7 @@ public class WordCountFileSystem extends Configured implements Tool {
 
 	public int run(String[] args) throws Exception {
 
-		if (!new File(inputPath.toString()).exists()) {
+		if (!new File(inputPath).exists()) {
 			throw new FileNotFoundException(
 					"Create /wordcount/input/ and add txt files with words!");
 		}
